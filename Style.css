@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #928cff;
+    height: 100vh;
+}
+.output{
+    padding: 18px;
+    background-color: #fff;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.standard{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.standard h4{
+    cursor: pointer;
+    margin-bottom: 14px;
+    color: #655eec;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+.standard h4:hover{
+    transform: scale(1.2);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;    
+    padding: 20px;
+}
+.input input{
+    width: 300px;
+    height: 32px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.time-count{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccc;
+    width: 300px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.time-count .level{
+    width: 40%;
+}   
+.input span {
+    font-size: 18px;
+}
+button{
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 18px;
+    height: 32px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.hidden{
+    width: 300px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: none;
+}
+#time-over{
+    background-color: red;
+}
+#finish{
+    background-color: green;
+}
+@media (max-width : 575px){
+    .input input,
+    .time-count,
+    button,
+    .hidden{
+        width: 240px;
+        font-size: 12px;
+    }
+
+}
